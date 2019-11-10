@@ -1,7 +1,8 @@
-<h6>Design decisions</h6>:
+<h1>Design decisions</h1>:
+<ul>
+  <li>clean and airy layout</li>
+  <li>use of brand colors: <span style="color: #1da7cb; width: 15px; height: 15px;"></span>, <span style="color: #1da7cb; width: 15px; height: 15px;"></span>, <span style="color: #15b684; width: 15px; height: 15px;"></span></li>
+</ul>
 
-- clean and airy layout
-- use of brand colors: 
 
-
-and implementation choices.
+<h1>Implementation choices:</h1>
