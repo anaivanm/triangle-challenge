@@ -1,39 +1,47 @@
+* {
+  color: #444851;
+}
+
+h1 {
+  color: #1da7cb;
+}
+
 .triangle {
   width: 0;
   height: 0;
   cursor: pointer;
+  border-bottom: 200px solid #555;;
 }
 
 .equilateral {
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 70px solid #555;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
 }
 
 .equilateral:hover {
-  border-bottom: 70px solid #def0d8;
+  border-bottom-color: #def0d8;
 }
 
 .isosceles {
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 80px solid #555;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
 }
 
 .isosceles:hover {
-  border-bottom: 80px solid #1da7cb;
+  border-bottom-color: #15b684;
 }
 
+
 .scalene {
-  border-left: 25px solid transparent;
-  border-right: 49px solid transparent;
-  border-bottom: 44px solid #555;
+  border-left: 150px solid transparent;
+  border-right: 70px solid transparent;
 }
 
 .scalene:hover {
-  border-bottom: 44px solid #15b684;
+  border-bottom-color: #1da7cb;
 }
 
-.fixed-height {
-  height: 100px;
+.result {
+  height: 70px;
+  letter-spacing: 1px;
 }
