@@ -10,14 +10,30 @@
   border-bottom: 70px solid #555;
 }
 
+.equilateral:hover {
+  border-bottom: 70px solid #def0d8;
+}
+
 .isosceles {
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-bottom: 80px solid #555;
 }
 
+.isosceles:hover {
+  border-bottom: 80px solid #1da7cb;
+}
+
 .scalene {
   border-left: 25px solid transparent;
   border-right: 49px solid transparent;
   border-bottom: 44px solid #555;
+}
+
+.scalene:hover {
+  border-bottom: 44px solid #15b684;
+}
+
+.fixed-height {
+  height: 100px;
 }
