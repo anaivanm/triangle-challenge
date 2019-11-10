@@ -1,4 +1,4 @@
-<h1>Design decisions</h1>:
+<h1>Design decisions:</h1>
 <ul>
   <li>clean and airy layout</li>
   <li>use of brand colors</li>
