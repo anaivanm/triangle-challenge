@@ -1,30 +1,27 @@
-// console.log("I am a triangle!")
-const triangle = document.querySelector('.triangle')
-const style = window.getComputedStyle(triangle)
+const triangles = document.querySelectorAll('.triangle')
 
-const borderLeft = style.borderLeft
-const borderRight = style.borderRight
-const borderBottom = style.borderBottom
+triangles.forEach(function(triangle) {
+  triangle.addEventListener('click', function(e) {
+    e.stopPropagation()
+    // console.log(this.classList.value)
+    const triangleStyle = window.getComputedStyle(triangle)
+    const borderLeft = triangleStyle.borderLeft.split(" ")[0]
+    const borderRight = triangleStyle.borderRight.split(" ")[0]
+    const borderBottom = triangleStyle.borderBottom.split(" ")[0]
+    if (allSidesEqual(borderLeft, borderRight, borderBottom)) {
+      triangle.nextElementSibling.innerText = 'I am an equilateral triangle.'
+    } else if (twoSidesEqual(borderLeft, borderRight, borderBottom)) {
+      triangle.nextElementSibling.innerText = 'I am an isosceles triangle.'
+    } else {
+      triangle.nextElementSibling.innerText = 'I am neither.'
+    }
+  })
+})
 
-const result = document.getElementById('result')
-
-function getBorderSize(string) {
-  let result = string.split(" ")
-  return result[0]
+function allSidesEqual(side1, side2, side3) {
+  return side1 === side2 && side2 === side3
 }
 
-function allSidesEqual (side1, side2, side3) {
-  return getBorderSize(side1) === getBorderSize(side2) && getBorderSize(side2) === getBorderSize(side3)
+function twoSidesEqual(side1, side2, side3) {
+  return side1 === side2 && side2 !== side3 && side1 !== side3
 }
-
-function printResult() {
-  if (allSidesEqual (borderLeft, borderRight, borderBottom)) {
-    result.innerText = 'I am an equilateral triangle.'
-  } else {
-    result.innerText = 'Guess again.'
-  }
-}
-
-printResult();
-console.log(allSidesEqual(borderLeft, borderRight, borderBottom))
-
