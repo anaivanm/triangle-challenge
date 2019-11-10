@@ -1,8 +1,12 @@
 <h1>Design decisions</h1>:
 <ul>
   <li>clean and airy layout</li>
-  <li>use of brand colors: <span style="color: #1da7cb; width: 15px; height: 15px;"></span>, <span style="color: #1da7cb; width: 15px; height: 15px;"></span>, <span style="color: #15b684; width: 15px; height: 15px;"></span></li>
+  <li>use of brand colors</li>
+  <li>Bootstrap UI</li>
 </ul>
 
 
 <h1>Implementation choices:</h1>
+<ul>
+  <li>Vanilla JS - simple app requirements</li>
+</ul>
